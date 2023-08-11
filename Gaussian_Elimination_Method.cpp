@@ -2,7 +2,7 @@
 using namespace std;
 const int MAX = 100;
 void input_Matrix(int &n, float M[][MAX]);
-void show_Matrix(int n, float M[][MAX]);
+void display_Matrix(int n, float M[][MAX]);
 void gaussianElimination(int n, float M[][MAX]);
 
 int main()
@@ -12,7 +12,7 @@ int main()
 	input_Matrix(n, M);
 	
 	cout << "\n\n\n Matrix of linear equations: \n\n";
-	show_Matrix(n, M);
+	display_Matrix(n, M);
 	
 	gaussianElimination(n, M);
 	cout << "\n\n\n Solutions:\n";
@@ -50,7 +50,7 @@ void input_Matrix(int &n, float M[][MAX])
 		}
 }
 
-void show_Matrix(int n, float M[][MAX])
+void display_Matrix(int n, float M[][MAX])
 {
 	int i, j;
 	for (i = 1; i <= n; i++)
